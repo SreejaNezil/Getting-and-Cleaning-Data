@@ -7,7 +7,6 @@
 
 ## Read the training Labels data
 trainLables <- read.table(".//UCIHARDataset//train//y_train.txt")
-names(trainLables) <- "Activity Names"
 
 ## Read the training data set
 trainData <- read.table(".//UCIHARDataset//train//x_train.txt")
@@ -28,7 +27,6 @@ testData <- read.table(".//UCIHARDataset//test//x_test.txt")
 
 ## Read test subject data
 testSubjects <- read.table(".//UCIHARDataset//test//subject_test.txt")
-names(testSubjects) <- "SubjectID"
 
 ## Merge all test data into one data frame
 TestSet <- cbind(testSubjects,testLables,testData)
@@ -46,6 +44,7 @@ masterData <- rbind(TrainingSet,TestSet)
 ########## Course Project Step 4 - Appropriately labels the data set with descriptive variable names
 ## Read the feature names/column names from the text file
 featureNames <- read.table(".//UCIHARDataset//features.txt")
+## featureNames is a data frame with 2 columns V1 and V2. V2 contains the activity IDs (numbers 1,2,3,4,5,6)
 
 ## Add names for the first 2 columns in the master data frame i.e. Subject ID and activity ID 
 varNames <- c("SubjectID", "Activity Names", as.character(featureNames$V2))
@@ -57,6 +56,8 @@ names(masterData) <- varNames
 valid_column_names <- make.names(names=names(masterData), unique=TRUE, allow_ = TRUE)
 names(masterData) <- valid_column_names
 
+## Please note there are still some extra ... in the column names, however ignoring this they are all meaning full column names
+
 ########## Course Project Step 4 - Ends here
 
 ##=================================================================================================================
@@ -64,10 +65,10 @@ names(masterData) <- valid_column_names
 ########## Course Project Step 2 - 2.Extracts only the measurements on the mean and standard deviation for each measurement
 
 
-## Extract the column numbers which contain mean. or sd.
+## Extract the column numbers which contain mean. or sd. in the variable names
 x <- which(grepl("mean.|std.", names(masterData), ignore.case = TRUE))
 
-## Subset the master data to extract only the required columns
+## Subset the master data to extract only the required columns/variables
 subsetData <- select(masterData,1,2,x)
 
 ########## Course Project Step 2 - Ends here
