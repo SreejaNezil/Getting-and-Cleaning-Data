@@ -1,2 +1,2 @@
-# Getting-and-Cleaning-Data
-Course Project submission
+## Getting-and-Cleaning-Data
+## Course Project submission
