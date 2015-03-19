@@ -20,7 +20,18 @@ In this final tidy data set, each record indicates
 
 
 The dataset includes the following files
-*1. finalDataSet.txt - This is the final data frame writting into a .txt file. It can be read into R data frame using read.table function.
-*2. Codebook - This file indicates the variables in the finalDataSet and how its values are computed
-*3. readme - This file gives an overview of the original experiment conducted, how the raw data was collected and also wat the final file contains
-*4. run_analysis.R - This script contains the steps performed to cleanse the raw data and arrive at the finalDataSet that matches the project requirements.
+
+* finalDataSet.txt - This is the final data frame writting into a .txt file. It can be read into R data frame using read.table function.
+* Codebook - This file indicates the variables in the finalDataSet and how its values are computed
+3.readme - This file gives an overview of the original experiment conducted, how the raw data was collected and also wat the final file contains
+4.run_analysis.R - This script contains the steps performed to cleanse the raw data and arrive at the finalDataSet that matches the project requirements.
+
+License:
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
