@@ -26,8 +26,7 @@ The dataset includes the following files
 * readme - This file gives an overview of the original experiment conducted, how the raw data was collected and also the contents of the final file
 * run_analysis.R - This script contains the steps performed to cleanse the raw data and arrive at the finalDataSet that matches the project requirements
 
-License:
-========
+###### License:
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
