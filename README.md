@@ -21,11 +21,10 @@ In this final tidy data set, each record indicates
 
 The dataset includes the following files
 
-* finalDataSet.txt - This is the final data frame writting into a .txt file. It can be read into R data frame using read.table function.
+* finalDataSet.txt - This is the final data frame writting into a .txt file. It can be read into R data frame using read.table function
 * Codebook - This file indicates the variables in the finalDataSet and how its values are computed
-* readme - This file gives an overview of the original experiment conducted, how the raw data was collected and also wat the final file contains
-* run_analysis.R - This script contains the steps performed to cleanse the raw data and arrive at the finalDataSet that matches the project requirements.
-* featureSubSet.txt - The list of features selected for the final tidy data set
+* readme - This file gives an overview of the original experiment conducted, how the raw data was collected and also the contents of the final file
+* run_analysis.R - This script contains the steps performed to cleanse the raw data and arrive at the finalDataSet that matches the project requirements
 
 License:
 ========
