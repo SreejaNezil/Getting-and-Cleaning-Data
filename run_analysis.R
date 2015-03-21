@@ -1,6 +1,6 @@
 
 ## The data zip file was downloaded to the current working directory
-## Contents of the zip file were extracted to a folder UCIHARDataset
+## Contents of the zip file were extracted to a folder UCIHARDataset in working directory
 ## Reading data from the existing files
 
 ########## Course Project Step 1 - Merges the training and the test sets to create one data set
