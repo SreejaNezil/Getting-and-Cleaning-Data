@@ -87,7 +87,7 @@ subsetData$Activity.Names <- as.factor(subsetData$Activity.Names)
 ## Getting a new vector with Activity Names column values mapped to descriptive names
 
 library(plyr)
-mappedCol <- mapvalues(workData$Activity.Name, from = c("1", "2", "3", "4", "5", "6"), to = c("WALKING",  "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
+mappedCol <- mapvalues(subsetData$Activity.Names, from = c("1", "2", "3", "4", "5", "6"), to = c("WALKING",  "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
 
 ## Replacing the original column in the dataframe
 subsetData$Activity.Names <- mappedCol
@@ -102,6 +102,8 @@ subsetData$Activity.Names <- mappedCol
 ########## Course Project Step 5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 finalDataSet <- subsetData %>% group_by(SubjectID, Activity.Names) %>% summarise_each(funs(mean))
+
+## Writing the final data set into a text file
 write.table(finalDataSet, file = "finalDataSet.txt", row.names=FALSE)
 
 ########## Course Project Step 5 - Ends here
