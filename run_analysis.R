@@ -68,6 +68,10 @@ names(masterData) <- valid_column_names
 ## Extract the column numbers which contain mean. or sd. in the variable names
 x <- which(grepl("mean.|std.", names(masterData), ignore.case = TRUE))
 
+## Load required packages
+install.packages("dplyr")
+library(dplyr)
+
 ## Subset the master data to extract only the required columns/variables
 subsetData <- select(masterData,1,2,x)
 
