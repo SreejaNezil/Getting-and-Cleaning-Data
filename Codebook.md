@@ -1,6 +1,8 @@
 ### Data Dictionary
 #### Human Activity Recognition Using Smartphones Dataset
 
+The final data set contains 30 rows (each row representing data for each volunteer) and 88 columns. The column details are described below.
+
 ** [1] SubjectID** - single digit integer
 the ID of the volunteers who carried out the experiment. There were a total of 30 subjects between the age of 19-48 and these are marked by number 1-30
 
